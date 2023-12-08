@@ -3,9 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms</title>
+    <style>
+        table,tr,td{
+            border: 1px solid black;
+            width: 40%;
+            padding: 10px;
+        }
+        #heading{
+            font-size: 30px;
+            background-color: rgb(224, 234, 238);
+            color: red;
+            width: 80%;
+            
+        }
+        button{
+            
+            height: 30px;
+        }
+        table{
+            background-color: skyblue;
+            border: 2px inset rgb(172, 41, 18);
+        }
+      
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+   
+        <form action="file.php">
+            <table>
+
+            
+            <table>
+                <tr>
+                    <td style="text-align: center;" id="heading">Registaton form</td>
+                    
+                </tr>
+            </table>
+            <table>
+                <div class="first">
+                    <tr>
+                       <td><label for="name">Enter Name</label></td> 
+                        <td> <input type="" id="name">               </td>
+                   
+                        
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password</label> </td>
+                        <td > <input type="" id="pass" >                  </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Enter Adress</label></td>
+                        <td> <input type="" id="address">                  </td>
+                    </tr>
+                </div>
+                
+                <tr>
+                    <td>Select Game</td>
+                    <td>
+                        <input type="checkbox" style="background-color: white;" id="cricket"><label for="cricket">Cricket</label><br>
+                        <input type="checkbox" id="play"><label for="play">Hocky</label><br>
+                        <input type="checkbox" id="Badminton"><label for="Badminton">Badminton</label><br>
+                        <input type="checkbox" id="footbal"><label for="footbal">footbal</label><br>
+                        <input type="checkbox" id="vollybal"><label for="vollybal">vollybal</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                       <label for="r"><input type="radio" name="rd" id="r"> Male</label>
+                       <label for="rd1"> <input type="radio" name="rd" id="rd1">Female </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select ur age</td>
+                    <td>
+                       <input type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>select photo</td>
+                    <td>
+                        <input type="file"
+                    </td>
+                </tr>
+                
+            </table>
+            <table>
+                <tr>
+                    <td><button style="width: 30%;">click me</button>
+                    <button style="width: 30%;">reset</button>
+                     <button style="width: 30%;">Submit form</button></td>
+                    
+                </tr>
+            </table>
+
+        </form>
+    
+    </table>
 </body>
 </html>
